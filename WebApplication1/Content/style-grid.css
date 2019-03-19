@@ -1,0 +1,98 @@
+﻿:root {
+    --white: #fff;
+    --grey: grey;
+    --bg-teal-500: #009688;
+    --bg-teal-C100: #20c659;
+    --bg-teal-50: #E0F2F1;
+}
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 50px 50px auto;
+    grid-template-columns: auto;
+}
+
+header, nav {
+    background-color: var(--bg-teal-500);
+    color: var(--white);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 50px 50px;
+}
+
+    header div {
+        justify-self: left;
+        padding-left: 15px;
+    }
+
+nav {
+    grid-template-rows: auto;
+    grid-template-columns: 50px 1fr 1fr 1fr;
+}
+
+    nav .active {
+        border-bottom: 3px solid var(--white);
+        width: 100%;
+        text-align: center;
+        line-height: 47px;
+    }
+
+.avator {
+    grid-area: avator;
+    margin: 10px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.cname {
+    grid-area: cname;
+    align-self: center;
+}
+
+.cmsg {
+    grid-area: cmsg;
+    border-bottom: 1px solid var(--bg-teal-50);
+}
+
+.time-stamp {
+    grid-area: time-stamp;
+    border-bottom: 1px solid var(--bg-teal-50);
+    padding-top: 10px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 80px 1fr 50px;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: "avator cname time-stamp" "avator cmsg time-stamp";
+}
+
+
+footer .material-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    background: var(--bg-teal-C100);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.material-icons, nav div {
+    cursor: pointer;
+}
