@@ -28,7 +28,7 @@ namespace WebApplication1
                 .AppendFormat("<span class='comment-count'>0</span></div></li></ul>")
                 .AppendFormat("<div class='clear'></div></div></li>");
 
-            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "key", string.Format("Dymsg(\"{0}\");", strscript), true);
+           
             for (int i = 0; i < 15; i++)
             {
                 ScriptManager.RegisterStartupScript(this.Page, this.GetType(), i.ToString(), string.Format("Dymsg(\"{0}\");", strscript), true);

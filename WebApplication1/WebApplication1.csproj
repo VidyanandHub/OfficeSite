@@ -121,6 +121,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\SiteLayout.css" />
     <Content Include="Content\style-grid.css" />
+    <Content Include="Content\w3.css" />
     <Content Include="Content\_Layout.css" />
     <Content Include="Default.aspx" />
     <Content Include="Demo.aspx" />
@@ -136,6 +137,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="HomePage.aspx" />
+    <Content Include="Images\profile-picture.png" />
+    <Content Include="Images\profile_image.jpg" />
+    <Content Include="profile_image.jpg" />
     <Content Include="Site2.aspx" />
     <Content Include="Site3.aspx" />
     <Content Include="Whatsapp.aspx" />
