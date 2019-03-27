@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="WebApplication1.HomePage" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home2.aspx.cs" Inherits="WebApplication1.Home2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
      <script type="text/javascript">
                 $(document).ready(function () {          
                            
@@ -11,9 +10,7 @@
               
                   
                                  }  
-              </script>
-
-   
+              </script>   
   
   <div class="left">
        <%--<div class="wrap-container-full" > --%>  
@@ -34,47 +31,13 @@
           </div> 
   </div>
   <div class="middle" >
-             <div id="maindiv" class="wrap-left-content-full">
-              <asp:MultiView ID="MultiView1" runat="server">
+               <asp:MultiView ID="MultiView1" runat="server">
                 <asp:View ID="View1" runat="server">
-                   <ul id="Note" class="modern-grid js-masonry">
-                            <li>
-                                <div class="modern-grid-content">
-                                   <div class="listbtn-category"><a href="a">a truth</a></div>
-                                    <div class="time-ago"><span>9 mins </span> ago</div>
-                                    <h2><a href="a"></a></h2>                            
-                                    <p>One of my closest friends opened up to me about depression. He thought because of my sunny disposition i could help. But the truth is I contemplate suicide every ..</p>
-                                    <ul class="meta-content-home">
-                                       <li>3 <span>Views</span></li>
-                                        <li class="lm-space"></li>
-                                        <li class="thumbs-ranting"><div class="thumbs-rating-container" id="thumbs-rating" >
-                                            <span class="thumbs-rating-up" onclick=""> 0</span> 
-                                            <span class="thumbs-rating-down" onclick=""> 0</span>
-                                            <span class="thumbs-rating-already-voted" data-text="You already voted!"></span>
-                                            <span class="comment-count"> 0 </span></div></li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                 </div>
-                            </li>
-                            <li>
-                                    <div class="modern-grid-content">
-                                       <div class="listbtn-category"><a href="a">a truth</a></div>
-                                        <div class="time-ago"><span>9 mins </span> ago</div>
-                                        <h2><a href="a"></a></h2>                            
-                                        <p>One of my closest friends opened up to me about depression. He thought because of my sunny disposition i could help. But the truth is I contemplate suicide every ..</p>
-                                        <ul class="meta-content-home">
-                                           <li>3 <span>Views</span></li>
-                                            <li class="lm-space"></li>
-                                            <li class="thumbs-ranting"><div class="thumbs-rating-container" id="thumbs-rating" >
-                                                <span class="thumbs-rating-up" onclick=""> 0</span> 
-                                                <span class="thumbs-rating-down" onclick=""> 0</span>
-                                                <span class="thumbs-rating-already-voted" data-text="You already voted!"></span>
-                                                <span class="comment-count"> 0 </span></div></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                    </div>
-                                </li>
-                        </ul>
+                    <div class="inner-grid-container" style="height:300px; display:block">
+                        <div style=" border: 1px solid blue;  display:inline-block; margin-top:20px; width:100px; height:100px;">RC1</div>
+                        <div style=" border: 1px solid blue; display:inline-block; margin-top:20px; width:300px; height:100px;">RC1</div>
+                        <div style=" border: 1px solid blue;  display:inline-block; margin-top:20px; width:100px; height:100px;">RC1</div>
+                      </div>
                 </asp:View>
 
                 <asp:View ID="View2" runat="server">
@@ -119,11 +82,10 @@
                 </asp:View>
              </asp:MultiView>
   </div>  
-  </div>
+
   <div class="right">
 
+  </div>               
 
-  </div>  
-               
 
 </asp:Content>

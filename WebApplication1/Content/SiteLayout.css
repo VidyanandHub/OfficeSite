@@ -1,9 +1,7 @@
 ﻿body {
-    margin: 0;
+    margin: 0;    
     padding-top: 0px;
-
-
-}
+    }
 
 .menu {
 
@@ -12,41 +10,7 @@
     margin: 0;
    
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-}
-
-.col-1 {width: 8.33%;}
-
-.col-2 {width: 16.66%;}
-
-.col-3 {width: 25%;}
-
-.col-4 {width: 33.33%;}
-
-.col-5 {width: 41.66%;}
-
-.col-6 {width: 50%;}
-
-.col-7 {width: 58.33%;}
-
-.col-8 {width: 66.66%;}
-
-.col-9 {width: 75%;}
-
-.col-10 {width: 83.33%;}
-
-.col-11 {width: 91.66%;}
-
-.col-12 {width: 100%;}
 
 
 
@@ -74,7 +38,8 @@
     line-height: 18px;
     font-size: 10px;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+
 }
 
 .fa {
@@ -126,6 +91,8 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
 }
 
     .wrap-container {
@@ -134,12 +101,9 @@
         margin: 0 auto
     }
 
-.left-sidebar {
-    width: 10%;
+.left-sidebar {    
     height: auto;
     float: left;
-    box-sizing: border-box;
-    background-color:burlywood;
     box-sizing: border-box;
     padding: 20px 20px 0 20px;
     z-index: 2
@@ -154,20 +118,16 @@
         width: 728px;
         height: auto;
         float: left;
-        margin: 0 20px
+        margin: 0 20px 
     }
 
 .wrap-left-content-full {
-    width: 90%;
-    height: 600px;
-    overflow-y: auto;
-    margin: 0 0 0 197px;
-    background-color: burlywood;
-    border-left: solid;
-    border-left-color: #4d636f !important;
-    box-sizing: border-box;
-    padding: 20px 20px 0 20px;
+    width: 100%;
+    height: auto;  
+    justify-content:center;
+    overflow:auto;
     z-index: 1
+    
 }
 
     .single-content {
@@ -201,6 +161,16 @@
         z-index: 2001;
         position: relative
     }
+
+.vline {
+    position: absolute;
+    left: 5%;
+    transform: translate(-50%);
+    border-right: 1px solid #4d636f;
+  
+    height: 600px;
+}
+
 
     ul.menu-left {
         float: left;
@@ -332,11 +302,11 @@
             font-size: 13px
         }
 
-    ul.modern-grid {
-        width: auto;
-        height: auto;
-        margin: 0 0 20px
-    }
+ul.modern-grid {
+    width: auto;
+    height: auto;
+    margin: 25px 25px 25px 25px
+}
 
         ul.modern-grid li {
             float: left;

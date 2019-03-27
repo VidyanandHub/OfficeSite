@@ -1,0 +1,109 @@
+﻿body {
+    background-color: aliceblue;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the header */
+.header {
+    grid-area: header;
+    text-align: center;
+    color: #fff !important;
+    background-color: #4d636f !important;
+    height: 80px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:16px;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    grid-template-areas: 'header header header' 'left middle right';
+    /*grid-template-areas: 'header header header' 'left middle right' 'footer footer footer';*/
+    grid-template-columns: 10% 80% 10%;
+    grid-auto-rows: 80px auto;
+    background-color: aliceblue;
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+/* Style the left column */
+.left {
+    grid-area: left;
+
+}
+
+/* Style the middle column */
+.middle {
+    grid-area: middle;
+    border-left: 1px solid #4d636f;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
+}
+
+
+.inner-grid-container {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 5px;
+    text-align:center;
+    border: 1px solid red;
+    width:100%;
+}
+
+
+
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+
+    /* Side navigation links */
+    .sidenav a {
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color on hover */
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+
+
+
+/* Style the footer */
+.footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 'header header header header header header' 'left left left left left left' 'middle middle middle middle middle middle' 'right right right right right right' 'footer footer footer footer footer footer';
+    }
+}
+
