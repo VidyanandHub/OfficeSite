@@ -33,7 +33,12 @@
   <div class="middle" >
                <asp:MultiView ID="MultiView1" runat="server">
                 <asp:View ID="View1" runat="server">
+                    <div style="display:inline-block; text-align:center; margin-top:20px; width:100%;">
+                             <asp:TextBox ID="txtpost"  Width="400px" runat="server"></asp:TextBox>
+                             <asp:Button ID="btnpost" Text="Post" runat="server" />
+                         </div><br />
                     <div class="inner-grid-container" style="height:300px; display:block">
+                        
                         <div style=" border: 1px solid blue;  display:inline-block; margin-top:20px; width:100px; height:100px;">RC1</div>
                         <div style=" border: 1px solid blue; display:inline-block; margin-top:20px; width:300px; height:100px;">RC1</div>
                         <div style=" border: 1px solid blue;  display:inline-block; margin-top:20px; width:100px; height:100px;">RC1</div>

@@ -85,6 +85,24 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.View View1;
         
         /// <summary>
+        /// txtpost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtpost;
+        
+        /// <summary>
+        /// btnpost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnpost;
+        
+        /// <summary>
         /// View2 control.
         /// </summary>
         /// <remarks>

@@ -4,8 +4,6 @@
 * {
     box-sizing: border-box;
 }
-
-
 /* Style the header */
 .header {
     grid-area: header;
@@ -16,7 +14,6 @@
     font-family:'Times New Roman', Times, serif;
     font-size:16px;
 }
-
 /* The grid container */
 .grid-container {
     display: grid;
@@ -35,7 +32,6 @@
     grid-area: left;
 
 }
-
 /* Style the middle column */
 .middle {
     grid-area: middle;
@@ -43,24 +39,18 @@
     background-color: aliceblue;
     justify-content: center;
 }
-
 /* Style the right column */
 .right {
     grid-area: right;
 }
-
-
 .inner-grid-container {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
     grid-gap: 5px;
     text-align:center;
     border: 1px solid red;
     width:100%;
 }
-
-
-
 /* Style the side navigation */
 .sidenav {
     height: 100%;
@@ -72,8 +62,6 @@
     background-color: #111;
     overflow-x: hidden;
 }
-
-
     /* Side navigation links */
     .sidenav a {
         color: white;
@@ -81,17 +69,11 @@
         text-decoration: none;
         display: block;
     }
-
         /* Change color on hover */
         .sidenav a:hover {
             background-color: #ddd;
             color: black;
         }
-
-
-
-
-
 /* Style the footer */
 .footer {
     grid-area: footer;
@@ -99,7 +81,6 @@
     padding: 10px;
     text-align: center;
 }
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .grid-container {

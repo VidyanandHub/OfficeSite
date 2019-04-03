@@ -35,8 +35,6 @@ namespace WebApplication1
                 .AppendFormat("<span class='thumbs-rating-already-voted' data-text='You already voted!'></span>")
                 .AppendFormat("<span class='comment-count'>0</span></div></li></ul>")
                 .AppendFormat("<div class='clear'></div></div></li>");
-
-
             for (int i = 0; i < 15; i++)
             {
                 ScriptManager.RegisterStartupScript(this.Page, this.GetType(), i.ToString(), string.Format("Dymsg(\"{0}\");", strscript), true);
@@ -60,8 +58,6 @@ namespace WebApplication1
                 .AppendFormat("<span class='thumbs-rating-already-voted' data-text='You already voted!'></span>")
                 .AppendFormat("<span class='comment-count'>0</span></div></li></ul>")
                 .AppendFormat("<div class='clear'></div></div></li>");
-
-
             for (int i = 0; i < 10; i++)
             {
                 ScriptManager.RegisterStartupScript(this.Page, this.GetType(), i.ToString(), string.Format("Dymsg(\"{0}\");", strscript), true);
